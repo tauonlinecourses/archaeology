@@ -399,6 +399,15 @@ p.spanAsNewline span:not(.notNewLine) {
     color: #545454;
 }
 
+.imgDiscriptionOnImgSmall{
+    position: absolute;
+    text-align: left;
+    color: #000000b5;
+    font-size: calc( var(--smallFont) - 0.1em);
+    max-width: 40vw;
+    left: 0px;
+}
+
 /*MessgeBlock*/
 .MessgeBlock {
     color: black;
@@ -837,7 +846,3 @@ flex-direction: column;
         grid-template-rows: auto;
     }
 }
-
-
-
-
