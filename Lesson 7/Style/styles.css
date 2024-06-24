@@ -393,6 +393,13 @@ p.spanAsNewline span:not(.notNewLine) {
     background: transparent;
     color: #545454;
     border-right: solid 1.8px #545454;
+    padding-right: 0.7em;
+}
+
+.imgDiscriptionOnImg.styleOption2.textAlign-Left {
+    border-right:none;
+    border-left: solid 1.8px #545454;
+    padding-left: 0.7em;
 }
 
 .imgDiscriptionOnImg.styleOption2 strong{
@@ -473,6 +480,16 @@ p.spanAsNewline span:not(.notNewLine) {
 .aniType-MoveLeftToRight.active-enter-animation {
     opacity: 1;
     transform: translateX(0);
+}
+
+.aniType-MoveBottomToTop {
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.aniType-MoveBottomToTop.active-enter-animation {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
