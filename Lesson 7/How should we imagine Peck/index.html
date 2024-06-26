@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>חידושים ושינויים בתקופת הרנסנס</title>
+    <link rel="icon" type="image/x-icon" href="../GeneralImg/FaceRealIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.4">
+    <link rel="stylesheet" type="text/css" href="../Style/styles.css" />
+    <script defer src="../Code/code.js"></script>
+    <style id="animationStyle"></style>
+</head>
+
+<body onload="start()">
+    <style>
+        @import url(https://db.onlinewebfonts.com/c/7862db7a83e284bbd72d383d34505c4b?family=Hadassah+Friedlaender);
+
+        q {
+            font-family: "Hadassah Friedlaender";
+            font-weight: 400;
+        }
+
+        q:before,
+        q:after {
+            color: var(--MainColor);
+            font-size: 1.5em;
+            position: relative;
+        }
+        .quoteWithStyle q:before {
+            bottom: 0.3em;
+        }
+
+        .quoteWithStyle q::after {
+            top: 0.85em;
+        }
+
+        .quoteWithStyle q {
+            font-size: 1.3em;
+        }
+
+        .quoteWithStyle q~span {
+            font-family: "Hadassah Friedlaender";
+            display: block;
+            width: fit-content;
+            font-size: 0.8em;
+        }
+
+        .MainTitle {
+            color: white;
+            border-color: white;
+            line-height: 2em;
+            padding: 0.5em;
+            margin-right: 1.2em;
+            width: fit-content;
+            transform: scale(1.2);
+        }
+
+        .left{
+            direction: ltr;
+        }
+
+        .fr1_5and1ChildWidth{
+            grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+        }
+        .fr1and1_5ChildWidth{
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+        }
+
+
+        @media only screen and (max-width: 720px) {
+            .MainTitle {
+                line-height: 1em;
+                transform: scale(1.5);
+            }
+        }
+    </style>
+
+    <section id="loadingScreen" class="screen"
+        style="position: fixed; z-index: 1000000; background: var(--MainColor); height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 30px; color: white;">
+        <span class="loader"></span>
+        <span>טוען אתר</span>
+    </section>
+
+    <section class="screen GridLayout equal2ChildWidthv2 resateGridOnPhone"
+        style="min-height: 100vh; background-color: var(--MainColor);">
+        <div class="blockSpacing"
+            style="display: flex;flex-direction: column;justify-content: space-between;height: fit-content;margin: auto;gap: 5vh;">
+            <h1 class="BoxBottomBorder MainTitle BoxTopBorder BoxBottomBorder" style="">
+                <span>
+                    איך עלינו
+                </span>
+                <span>לדמיין את פק?</span>
+            </h1>
+            <div>
+                <p style="
+    font-weight: 700;
+    color: white;
+">בשום שלב במחזה שייקספיר לא מתאר לנו איך פק נראה.
+                    אז איך עלינו לדמיין אותו?</p>
+            </div>
+
+
+        </div>
+        <div style="position: relative;" CLASS="centerFlex">
+            <img src="img/lookandlearn.com-YFS0152861_noBG.PNG" style="HEIGHT: 75VH;">
+
+
+            <div class="imgDiscriptionOnImgSmall textAlign-Left" style="bottom: 10px; left: 10px;">
+                A series of silhouettes illustrating Midsummer night's dream, by Albert Vogel and P. Konewka, under
+                CC-BY-SA 4.0, via Folger Shakespeare Library and Look and Learn
+            </div>
+        </div>
+
+    </section>
+
+    <section class="screen GridLayout fr1_5and1ChildWidth resateGridOnPhone">
+        <div class="blockSpacing  centerFlex ">
+            <div style="display: flex;flex-direction: column;justify-content: space-evenly;gap: 6vh;">
+                <strong>בואו נתמקד בהופעה הראשונה של פק ונראה מה אפשר ללמוד ממנה.</strong>
+                <div>
+                    <p>המערכה הראשונה של המחזה מסתיימת כשבעלי המלאכה יוצאים מהבמה, שלאורך המערכה ייצגה את העיר אתונה.
+                        הדלתות בחלק האחורי של הבמה נפתחות, שתי דמויות של פיות נכנסות והקהל מבין מיד שאנחנו כבר לא בעיר
+                        אלא ביער.</p>
+                    <p>בטקסט של המחזה כפי שנשתמר, ישנה הוראת במה קצרה שאומרת כך: "בן פיות אחד נכנס בדלת אחת, ורובין
+                        גודפלו מהדלת השנייה".</p>
+                    <p>פק פונה אל הפיה שנכנסת לבמה מהצד השני ואומר את השורה הראשונה:</p>
+                </div>
+                <div class="centerFlex quoteWithStyle left have-scroll-animation aniType-skewX">
+                    <div>
+                        <q>How now, <strong>spirit!</strong> wither wander you?</q>
+                        <span>(2.1.1)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; align-self: end; justify-content: center;">
+            <img class="have-scroll-animation aniType-Blur" style="width: 90%; margin-bottom: 10%;" src="img/PuckAndFairyCombain.png" alt="איור של פק">
+            <div style="bottom: 0;" class="imgDiscriptionOnImgSmall">האיורים של פק ובן הפיות נוצרו בסיוע של בינה מלאכותית Midjourney (גרסה 6) בתאריך 18.1.2024</div>
+        </div>
+    </section>
+
+
+    <section class="screen GridLayout fr1and1_5ChildWidth resateGridOnPhone backgrayScale-1" >
+        <div style="display: flex; align-self: end; justify-content: center;">
+            <img class="have-scroll-animation aniType-Blur" style="width: 90%; margin-bottom: 10%;" src="img/PuckAndFairyCombain.png" alt="איור של פק">
+            <div style="bottom: 0; left: auto; right: 0px;" class="imgDiscriptionOnImgSmall">האיורים של פק ובן הפיות נוצרו בסיוע של בינה מלאכותית Midjourney (גרסה 6) בתאריך 18.1.2024</div>
+        </div>
+        <div class="blockSpacing  centerFlex">
+            <div class="have-scroll-animation" style="display: flex;flex-direction: column;justify-content: space-evenly;gap: 6vh;">
+                <p><strong>יש קושי לתרגם את התמונה הזו לעברית</strong> כי במובנים רבים עולם המושגים האנגלי של הפיות זר לשפה ולתרבות העברית. במשפט הזה, הקושי בא לידי ביטוי במילה spirit. פרנס מתרגם:</p>
+                <div class="centerFlex quoteWithStyle have-scroll-animation aniType-skewX">
+                    <div>
+                        <q>רוח, הֵי! לאן את משוטטת?</q>
+                        <span>(מערכה 2, תמונה 1)</span>
+                    </div>
+                </div>
+                <p>
+                    אבל כמובן שפירוש המילה spirit כאן הוא לא רוח רפאים, כמו שיכול להשתמע מהתרגום של פרנס, אלא פיה או יצור על-טבעי.
+                </p>
+                <p>
+                    <strong>
+                        אז איך הפיה או היצור נראים? כמו שאנחנו רואים, שייקספיר לא נותן לנו תשובה במחזה.
+                        <Br>
+אולי נוכל לפחות לגלות איך הפיות הוצגו על הבמה של שייקספיר?
+                    </strong>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="screen GridLayout equal2ChildWidthv2 resateGridOnPhone" >
+        <div class="blockSpacing">
+            <p>גם על האופן בו שייקספיר ייצג את הפיות על הבמה איננו יודעים הרבה.</p>
+            <p>
+                <strong>אבל נוכל לציין שתי השערות מקובלות:</strong>
+            </p>
+            <div class="flexTop have-scroll-animation aniType-ScaleSmallToBig active-enter-animation" style="top: 10%; right: 10%; max-width: 35em; background-color: rgba(255, 255, 255, 0.9); z-index: 1;">
+                <img src="img/RomanNum1.svg" style="position: relative; top: 0.4em;">
+                <div>
+                    <p style="margin-bottom: 0px; margin-left: 1.3em; margin-top: 0.5em;">
+                        ראשית, יש לשער שהשחקנים ששיחקו את הפיות לבשו<strong> תלבושות צבעוניות, איפור כבד, וכנראה גם מסכות</strong> שנתנו להם מראה חייתי או על-טבעי.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="centerFlex">
+            <iframe style="width: 90%; border-radius: 7px; min-height: 20vw; height: auto; aspect-ratio: 16 / 9;" width="560" height="315" src="https://www.youtube.com/embed/kdtj6YVLJ04?si=08TXhY-Tv4njfOBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="screen GridLayout fr1and2ChildWidth resateGridOnPhone" style="background-color: #fafafa;">
+        <div style="position: relative;">
+            <div class="backgroundImg" style="background-image:url('img/George_Romney_\(1734-1802\)_-_Tom_Hayley_as_Robin_Goodfellow_-_N05850_-_National_Gallery.jpg'); background-position-y: 30%; HEIGHT: 50VH;" alt="Tom Hayley as Robin Goodfellow, George Romney (1789-1792)">
+                <div class="imgDiscriptionOnImg" style="WIDTH: min(max(65%, 30em), 91%);">
+                    Tom Hayley as <strong>Robin Goodfellow</strong>, George Romney (1789-1792)
+                </div>
+            </div>
+        </div>
+
+        <div class="blockSpacing" style="display: flex; flex-direction: column; justify-content: space-between; position:relative">
+
+            <div class="have-scroll-animation aniType-skewX active-enter-animation" style=" max-width: 35em;">
+                <div class="flexTop have-scroll-animation aniType-ScaleSmallToBig active-enter-animation" style="top: 10%; right: 10%; max-width: 35em;  z-index: 1;">
+                    <img src="img/RomanNum2.svg" style="position: relative; top: 0.4em;">
+                    <div>
+                        <p style="margin-bottom: 0px; margin-left: 1.3em; margin-top: 0.5em;">
+                            <p>ושנית, ההנחה היא שאת מרבית הפיות לא שיחקו שחקנים מבוגרים אלא <strong>שחקנים ילדים</strong>. הבחירה הזו נועדה להמחיש את הרעיון שהפיות ילדותיות וקטנות יותר מהדמויות האחרות. </p>
+                        </p>
+                    </div>
+                </div>
+                <p>אבל לעניין הגודל הפיזי של הפיות ושל מי שייצגו אותן על הבמה יש משמעות גדולה יותר.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen GridLayout fr2and1ChildWidth resateGridOnPhone" >
+        <div class="blockSpacing" style="display: flex; flex-direction: column; justify-content: space-between; position:relative">
+
+            <div class="have-scroll-animation aniType-skewX active-enter-animation" style=" max-width: 35em;">
+                <p><strong>אחד ממנגנוני ההגנה המרכזיים שלנו להתמודדות עם דבר מפחיד, לא מובן ומאיים הוא להקטין אותו.</strong></p>
+<p>כך, למשל, רובנו לא מפחדים מחרק קטנטן שאנחנו בקושי רואים, אבל אם נגדיל אותו במיקרוסקופ נראה יצור מפחיד ומאיים. מנגנון ההקטנה הזה, כדרך להתמודד עם פחדים, היה רווח באגדות ובפולקלור. אם יש שד שיכול להרוג ולפגוע, הפחד ממנו הוא כמובן גדול, אבל אם נקטין את השד &ndash; נהפוך אותו למשהו קומי ותמים שמאיים עלינו הרבה פחות.</p>
+<p>חוקרים רבים סבורים שמנגנון ההקטנה הזה הופנה גם כלפי הפיות. <strong>ההקטנה של הפיות בסיפורי עם נועדה להקטין את הפחד מהעולם העל טבעי ולהפוך אותו למשהו קומי שניתן להתמודד איתו.</strong> פיות שובבות וקטנות לא מסוגלות ממש לפגוע אלא רק להציק באופן כזה שיעורר גיחוך או בידור.</p>
+<p>בשביל שפיות יהיו דמויות קומיות הן צריכות להיות קטנות פיזית, ולכן כשרצו להציג פיות על במה - בחרו בדרך כלל ילדים או בני נוער שישחקו אותן.</p>
+            </div>
+        </div>
+
+        <div style="position: relative;">
+            <div class="backgroundImg" style="background-image:url('img/Midsummernightsd00shak_0125.jpg'); background-position-y: 30%; HEIGHT: 50VH;" alt="Arthur Rackham, Puck (1908)">
+                <div class="imgDiscriptionOnImg" >
+                    Arthur Rackham, <Strong>Puck (1908)</Strong>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+    <section class="screen GridLayout equal2ChildWidthv2 resateGridOnPhone" style="background-color: #fafafa;">
+        <div class="centerFlex">
+            <iframe class="have-scroll-animation aniType-ScaleSmallToBig" style="width: 90%; border-radius: 7px; min-height: 20vw; height: auto; aspect-ratio: 16 / 9;" width="560" height="315" src="https://www.youtube.com/embed/rCXIednhumU?si=xPfOdwvJ1psEP6ZW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="blockSpacing centerFlex">
+            <div>
+                <p>ובכל זאת, פק (וכמוהו גם אוברון) כנראה היה יוצא דופן: <strong>בשל מורכבות התפקיד, סביר שהדמות שלו כן גולמה על ידי שחקן בוגר.</strong></p>
+                <p>למרות שאין לנו איך לדעת מי מהשחקנים של שייקספיר שיחק איזה תפקיד במחזה, סביר להניח שהשחקן הבוגר ששיחק את דמותו של פק היה צנום ונמוך קומה, או אחד מהשחקנים הילדים הבכירים בלהקה שהיה בוגר יותר וכבר התרגל לשחק גם דמויות בוגרות.</p>
+            </div>
+          
+        </div>
+
+    </section>
+
+    <section class="screen GridLayout fr2and1ChildWidth resateGridOnPhone" >
+        <div class="blockSpacing" style="display: flex; flex-direction: column; justify-content: space-between; position:relative">
+
+            <div class="have-scroll-animation aniType-skewX active-enter-animation" style=" max-width: 35em;">
+                <p>אי-הבהירות בנוגע לאופן שבו צריך להציג את פק על הבמה הוא עניין חשוב: מכיוון שמדובר בדמות מרכזית, <strong>הבמאי או הבמאית מחויבים בכל הפקה לפרש את דמותו עבור הקהל דרך הבחירה איך להציג אותו.</strong></p>
+                <p>במאה ה-18, למשל, כשהיה מקובל לקרוא את שייקספיר כספרות גבוהה ולא להציג אותו על במה, ציירים דמיינו את דמותו של פק <strong>כילד שובב דמוי קופידון, אל האהבה,</strong> שכן במחזה פק משחק תפקיד דומה לזה של קופידון. כך למשל בציור המפורסם מ-1789 של הצייר האנגלי ג'ושוע ריינולדס.</p>
+                <p>אבל ברור לגמרי שייצוג מסוג זה של פק, כילד כל כך קטן, לא אפשרי על במה. </p>
+            </div>
+        </div>
+
+        <div style="position: relative;">
+            <div class="backgroundImg " style="background-image:url('img/Reynolds-Puck.jpg'); background-position-y: 30%; HEIGHT: 50VH;" alt="The Puck, Joshua Reynolds (1789)">
+                <div class="imgDiscriptionOnImg" >
+                    Joshua Reynolds <Strong>The Puck (1789)</Strong>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="screen GridLayout equal2ChildWidthv2 resateGridOnPhone" style="background-color: #fafafa;">
+        <div class="centerFlex">
+            <div>
+                <iframe style="margin: auto; display: block; width: 95%;border-radius: 7px; aspect-ratio: 16 / 9;" width="560" height="315" src="https://www.youtube.com/embed/tMOaAp42QRw?si=_ywjImcHgDeiLkvg&amp;start=167" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="imgDiscriptionOnImg styleOption2" style="width: 80%; bottom: auto; left: auto;">
+                    צפו במונולוג הסיום של פק בגילומו של סטנלי טוצ’י. 
+                    <br>
+                    הסרטון כולל ביצועים של שחקנים נוספים, מומלץ לצפות גם בהם.
+                </p>
+            </div>
+
+        </div>
+        <div class="blockSpacing centerFlex">
+            <div>
+                <p>בהפקות במה מודרניות, בדרך כלל ישחק את התפקיד שחקן או שחקנית צעירים לבושים בתלבושת מיוחדת כלשהי. בהפקה ההוליוודית של &ldquo;חלום ליל קיץ&rdquo; מ-1999, שמציעה פרשנות קולנועית מעט אירונית למחזה, משחק את פק השחקן האמריקאי <strong>סטנלי טוצ'י</strong> (Stanley Tucci). הוא מופיע בדמות סאטיר (איש תיש) מקריח ומבוגר שבעיקר מתהלך בעולם המחזה בחוסר חשק ושעמום דיכאוני, כאילו התעייף מהחיים בתור פיה.</p>
+            </div>
+          
+        </div>
+        
+
+    </section>
+
+    <section class="screen GridLayout fr1and2ChildWidth resateGridOnPhone">
+        <div class="centerFlex">
+            <div class="imgWithCation">
+                <img src="img/P165-puck-1230x1265.jpg" style="max-height: 90vh; width: auto; max-width: 95%; margin: auto; display: block;" alt="Richard Dadd, Puck and the Fairies, (~1874)">
+            </div>
+            <p class="imgDiscriptionOnImg " style="bottom: 0; right: 0px; width: fit-content;">
+                Richard Dadd, <strong>Puck and the Fairies, (~1874)</strong>
+            </p>
+        </div>
+        <div class="centerFlex blockSpacing" style="flex-direction: column;">
+            <p>לסיכום, <strong>אין דרך אחת נכונה לייצג את פק ואת שאר הפיות על הבמה.</strong> ולמעשה, יש סיבות להאמין שזה לא מקרי ששייקספיר לא סיפק לנו דרך כזו.</p>
+            <div class="flexTop have-scroll-animation aniType-Blur active-enter-animation" style="height: fit-content; max-width: 750px;">
+                <img src="img/RomanNum1.svg" style="position: relative; top: 0.4em;" alt="נקודה ראשונה">
+                <div>
+                    <p>ראשית, הפיות במהותן הן דמויות קסומות שמשנות צורה ולכן, למעשה, <strong>אין להן צורה מוגדרת</strong>. פיה יכולה להיות קטנה או גדולה, מאיימת או שובבה, או כל דבר אחר שנדמיין בהקשר של כוחות על טבעיים קסומים. אם נקבע ונגדיר את הצורה של הפיה ככזו או אחרת - נאבד את האופי החמקמק והדמיוני שלה.</p>
+                </div>
+            </div>
+            <div class="flexTop have-scroll-animation aniType-Blur active-enter-animation" style="height: fit-content; max-width: 750px;">
+                <img src="img/RomanNum2.svg" style="position: relative; top: 0.4em;"  alt="נקודה שנייה">
+                <div>
+                    <p>ושנית, השאלה איך עלינו לדמיין את פק ואת שאר הפיות היא שאלה חשובה למחזה. היא נוגעת לאופי הדמיוני של הפיות ומכאן גם לשאלה הבסיסית יותר שעומדת בלב המחזה:</p>
+                    <p><strong>איך ניתן לייצג על במה משהו לכאורה לא אמיתי או דמיוני?</strong> </p>
+                </div>
+            </div>
+            <p>כמו שנראה בשיעור הבא, השאלה הזו - <strong>שאלת הייצוג</strong> - מקבלת את הביטוי המובהק ביותר בדמותם של בעלי המלאכה, שמתחבטים בה בצורה מפורשת במהלך העבודה על ההצגה שלהם.</p>    
+        </div>
+
+    </section>
+
+
+
+
+    <a id="backToModdle" href="https://moodle.tau.ac.il/mod/board/view.php?id=524579">חזרה לשיעור ◄</a>
+</body>
+
+</html>
