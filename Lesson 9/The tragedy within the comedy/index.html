@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>חידושים ושינויים בתקופת הרנסנס</title>
+    <link rel="icon" type="image/x-icon"
+        href="../GeneralImg/FaceRealIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.4">
+    <link rel="stylesheet" type="text/css" href="../Style/styles.css" />
+    <script defer src="../Code/code.js"></script>
+    <style id="animationStyle">
+    </style>
+</head>
+
+<body onload="start()">
+    <style>
+        #MainTitle{
+            line-height: 1.6em;
+    text-align: center;
+    display: grid;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+        }
+        #MainTitle img{
+            height: 15em;
+        }
+        #MainTitle span:nth-child(1), #MainTitle span:nth-child(3){
+            font-size: 1.5em;
+        }
+        #MainTitle span:nth-child(2){
+            font-weight: 400;
+        }
+
+        .CenterInnerP P {
+            margin: 1em auto 0px auto;
+            text-align: center;
+        }
+        @media only screen and (max-width: 720px) {    
+            #MainTitle{
+                grid-template-columns: auto;
+            }
+          
+        }
+#MainTitle span{
+display: block;
+}
+    </style>
+
+    <section id="loadingScreen" class="screen"
+        style="position: fixed; z-index: 1000000; background: var(--MainColor); height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 30px; color: white;">
+        <span class="loader"></span>
+        <span>טוען אתר</span>
+    </section>
+
+    <section class="screen" style="min-height: 100vh;">
+        <div class="blockSpacing" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div  id ="MainTitle" class="BoxBottomBorder">
+                <img src="img/Mask_Picture1.png " alt="" style="rotate: -10deg;">
+                <h1 >
+                    <span>
+                        הטרגדיה
+                    </span>
+                    <span>בתוך</span>
+                    <span>הקומדיה</span>
+                </h1>
+                <img  src="img/Mask_Picture2.png" alt=""  style="rotate: 15deg;"/>
+            </div>
+
+            <div class="CenterInnerP">
+                <p>דיברנו בקורס לא פעם על שאלות הנוגעות לסוגות הדרמתיות של <strong>קומדיה וטרגדיה</strong> בתקופתו של שייקספיר.</p>
+<p>בשיעור הבא, כשנעמיק את קריאתנו ב"רומיאו ויוליה", נלמד גם יותר לעומק על האופן שבו שייקספיר התפתח בסוגה הטרגית עד שכתב את המחזה.</p>
+<p><strong>אבל לפני כן, בואו נסכם מספר נקודות חשובות בנוגע ליחס בין קומדיה וטרגדיה.</strong></p>
+            </div>
+
+            <img style="width: 2.5em; margin: 0px auto; display: block; margin-top: calc(6% + 40px);"
+                src="../GeneralImg/ArrowDown.png"
+                alt="חץ שמצביע למטה- תגלול למטה" />
+        </div>
+    
+
+    </section>
+
+    <section class="screen backgroundImg background_ParallaxEffect centerFlex" style="background-image:url('img/Mosaic_depicting_theatrical_masks_of_Tragedy_and_Comedy.jpg'); background-position-y: center;">
+        <div class="have-scroll-animation aniType-ScaleSmallToBig" style="top: 10%; right: 10%; width: 50%; max-width: 35em; background-color: rgba(255, 255, 255, 0.9); z-index: 1; padding: 0px 1em;">
+            <p>שייקספיר קיים את העיקר מבחינת שתי המוסכמות הבסיסיות של טרגדיה וקומדיה: הקומדיות שלו מסתיימות בנישואי הגיבורים והטרגדיות שלו מסתיימות במות הגיבורים.</p>
+            <p>אבל <strong>שייקספיר לעולם לא דבק בהפרדה ברורה בין שתי הסוגות</strong>: ישנם לא מעט מחזות שייקספיריים (וגם מחזות של מחזאים אחרים מהתקופה) שנתקשה מאוד לסווג תחת הכותרת של "קומדיה" או "טרגדיה".</p>
+            <p>המצב היה כל כך נזיל עד שחוקרים נאלצים לדבר על חלק מהמחזות מתקופתו של שייקספיר במונחים כמו "<strong>טרגיקומדיה</strong>" (tragicomedy) או "<strong>מחזות בעיה</strong>" (problem plays), וזאת משום שקשה מאוד לסווג אותם.</p>
+            <p>כך לדוגמה, יכול להיות מחזה עם עלילה קומית מובהקת שפתאום מסתיים באופן טרגי, או, מה שהיה יותר נפוץ, מחזה טרגי לכל דבר שפתאום מסתיים בסוף קומי טוב.</p>
+        </div>
+        <p class="imgDiscriptionOnImgSmall styleOption2" style="width: 80%; bottom: 0px; color: #dddddd; left: 10px;">
+            Mosaic depicting theatrical masks of Tragedy and Comedy, by Carole Raddato, under CC-BY-SA, via Wikimedia Commons
+        </p>
+    </section>
+
+    <section class="screen centerFlex" style="flex-direction: column;">
+        <p>ניתן לראות בדיוק מה שייקספיר חשב על הנושא אם נפנה לנאום המפורסם של פולוניוס במחזה "<strong>המלט</strong>" שבו הוא מציג את השחקנים שבאים להעלות הצגה בארמון:</p>
+        <div class="centerFlex quoteWithStyle left have-scroll-animation aniType-skewX">
+            <div style="max-width: 700px;">
+                <q style="text-align: justify;">השחקנים הכי טובים בעולם, אם זה לטרגדיה, קומדיה, היסטוריה, פסטורליה, פסטורליה-קומית, היסטוריה-פסטורלית, טרגי-קומדיה-היסטורית-פסטורלית, דיאלוג בלי הפסקות או פואמה בלי גבולות הם קלים כמו ליצנים ושוקלים כמו יוונים. לאסכולה ספרותית ואימפרוביזציה חופשית - אלה האנשים היחידים.</q>
+                <span><p>(<strong>המלט</strong>, מערכה 2, תמונה 2. תרגום: דורי פרנס)</p></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen backgroundImg background_ParallaxEffect" style="background-image:url('img/William_Shakespeare_by_John_Taylor.jpg'); background-position: left 30%; background-size: 125%;">
+        <div class="flyBox have-scroll-animation aniType-Blur active-enter-animation" style="bottom: 7%; right: 10%; width: 40%; max-width: 35em; background-color: rgba(255, 255, 255, 0.9); z-index: 1;">
+            <p>האמת היא, ששייקספיר ראה את המוסכמות כמסגרת דרמתית מלאכותית. הוא פעל בתוך המסגרות האלה אבל אהב תמיד לחתור תחתן, ולו מתוך ההבנה <strong>שבחיים שלנו לא ניתן באמת להבדיל בין הממד הקומי</strong> (שעוסק בתשוקה לחיים) <strong>ובין הממד הטרגי</strong> (שעוסק בפחד הקמאי שלנו מהמוות). המוות והחיים כרוכים זה בזה תמיד, וכך גם במחזות של שייקספיר.</p>
+        </div>
+    </section>  
+
+    <section class="screen centerFlex">
+        <div style="height: 100vh; width: 100vw; display: flex; position: absolute;">
+            <div class="backgroundImg" style="background-image:url('img/artvee_Romeo and Juliet 1884.jpg'); height: 100%; width: 50%; position: relative; background-position-y: top;" alt="">
+            </div>
+            <div class="backgroundImg"  alt="" style="background-image:url('img/Sir_Joseph_Noel_Paton_-_The_Quarrel_of_Oberon_and_Titania.jpg'); height: 100%; width: 50%; position: relative;  background-position-y: top;">
+            </div>
+        </div>
+
+        <div class="flyBox have-scroll-animation aniType-blur active-enter-animation" style="width: 50%; max-width: 35em; background-color: rgba(255, 255, 255, 0.9); padding: 0px 20px; text-align: justify;">
+            <p>כמו שכבר רמזנו בשיעור הראשון, <strong>הדבר נכון במיוחד לגבי "חלום ליל קיץ" ו"רומיאו ויוליה" שהם כמו תמונת מראה זה של זה</strong>. לא רק ששייקספיר כתב את שני המחזות האלה כצמד באותה שנה, אלה נראה כי הוא ממש חשב עליהם ביחד וקיפל אותם אחד בתוך השני.</p>
+            <p>בתוך "חלום ליל קיץ", קומדיה קסומה על אהבה, בעלי המלאכה מעלים הצגה טרגית על אהבה נכזבת שמסתיימת במוות, בדומה להתרחשות ברומיאו ויוליה.</p>
+            <p>בתוך "רומיאו ויוליה" הטרגי, עולם הפיות הקומי מפציע כחלום בלהות שרודף את בני הנוער הצעירים שמתמודדים עם תחושות מורכבות של התעוררות מינית ואהבה נכזבת.</p>
+        </div>
+    </section>
+
+    <section class="screen" style="display: grid;">
+        
+        <div class=" have-scroll-animation aniType-blur active-enter-animation" style="width: 50%; margin: auto; max-width: 35em; background-color: rgba(255, 255, 255, 0.9); padding: 0px 20px; text-align: justify;">
+            <p><strong>לזליגה הזו בין המחזות ובין הסוגות הדרמתיות יש משמעות פילוסופית-קיומית עמוקה</strong>: שייקספיר מצביע על כך שההבדל בין הקומי לטרגי בחיינו הוא לרוב רק עניין של מזל או נסיבות ולכן ההגדרות האלה הן מלאכותיות.</p>
+            <p>הסוף הקומי של "חלום ליל קיץ" תלוי בכוחו האקראי של שיקוי קסמים דמיוני, בעוד שהסוף הטרגי של "רומיאו ויוליה" נגרם בסוף רק בגלל חוסר מזל של תזמון גרוע (ודבר דואר שלא נמסר בזמן).</p>
+        </div>
+        <div style="display: flex; height: min(40vh, 40vw); justify-content: center; gap: 50px;">
+            <img src="img/Mask_Picture2.png " alt=""  style="rotate: -10deg;">
+            <img src="img/Mask_Picture1.png " alt=""  style="rotate: 15deg;">
+          
+        </div>
+        
+
+    </section>
+
+    <a id="backToModdle" href="https://moodle.tau.ac.il/mod/hvp/view.php?id=549538">חזרה לשיעור ◄</a>
+</body>
+
+</html>
