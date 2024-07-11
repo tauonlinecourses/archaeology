@@ -69,6 +69,7 @@ window.addEventListener("resize",ScollAnimation);
                 top: calc(50% - 1.1em);
                 height:1.5em;
                 width:1.5em;
+                background:#d4962c;
               }
               ${getPresentInPage("slidAnimationTag-3",0)} {
                 left: calc(${document.getElementById("navNum1").getBoundingClientRect().right}px - 0.4em);
