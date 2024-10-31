@@ -45,7 +45,7 @@ strong {
 }
 
 a {
-    color: var(--MainColor);
+    color: #3255c9;
 }
 .textJustify {
     text-align: justify;
