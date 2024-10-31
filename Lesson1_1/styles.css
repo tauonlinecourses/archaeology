@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap');
 
 :root {
-    --MainColor: #3F836B;
+    --MainColor: #c40c0c;
+    --DarkerMainColor: #aa2c2c;
     --BoxBorderWidth: 5px;
     --paddingSize: 1em;
     --smallFont: 0.6em;
     --SideManuWidth: clamp(150px, 20vw, 400px);
+    --GrayColor:
+
 
     --scroll: 0;
 }
@@ -17,7 +20,7 @@ body {
     margin: 0px;
     font-size: 1.2em;
     font-weight: 400;
-    word-spacing: 0.16em;
+    /* word-spacing: 0.16em; */
 }
 
 p{
@@ -297,11 +300,11 @@ p.spanAsNewline span:not(.notNewLine) {
 }
 
 .backgrayScale-1 {
-    background-color: #fafafa;
+    background-color: #fff8ef;
 }
 
 .backgrayScale-2 {
-    background-color: #f1eae1;;
+    background-color: #eee2d1;;
 }
 
 .centerBlock {
@@ -312,7 +315,7 @@ p.spanAsNewline span:not(.notNewLine) {
 
 #backToModdle{ text-decoration: none;
     color: white;
-    background-color: #4f9e83;
+    background-color: #000000f7;
     padding: 25px 50px;
     font-size: 1.6em;
     text-align: center;
@@ -411,7 +414,14 @@ p.spanAsNewline span:not(.notNewLine) {
     text-align: left;
     color: #000000b5;
     font-size: calc( var(--smallFont) - 0.1em);
-    max-width: 40vw;
+    max-width: 85%;
+    left: 3px;
+    word-break: break-all;
+}
+
+.imgDiscriptionOnImgSmall.styleOption2{
+    background-color: rgba(255, 255, 255, 0.589);
+    padding:5px;
     left: 0px;
 }
 
@@ -459,7 +469,7 @@ p.spanAsNewline span:not(.notNewLine) {
 
 /*object animations*/
 .have-scroll-animation {
-    transition: all 0.7s linear 0.2s;
+    transition: all 0.7s linear 0.1s;
 }
 
 .aniType-MoveRightToLeft {
@@ -675,7 +685,7 @@ p.spanAsNewline span:not(.notNewLine) {
 
 /* RedLine - no used*/
 .RedLineContainer {
-    background-color: #CC2E36;
+    background-color: var(--DarkerMainColor);
     color: white;
     text-align: center;
     margin: 0;
@@ -715,7 +725,7 @@ p.spanAsNewline span:not(.notNewLine) {
           
           /* Handle on hover */
           ::-webkit-scrollbar-thumb:hover {
-            background: #2e614f; 
+            background: var(--DarkerMainColor); 
           }
               
         .flexRowWidthScreenOnly{
